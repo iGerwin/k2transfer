@@ -1,0 +1,271 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #333;
+text-align: center;
+    margin: 20px 0;
+
+}
+    
+
+
+.right-aligned {
+    text-align: right;
+}
+
+
+
+p {
+    color: #555;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007d5c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar .menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.navbar .menu-button span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background: #007d5c;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    font-size: 14px;
+}
+
+/* Section Layouts */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+
+
+
+}
+
+.text-column {
+    flex: 1 1 45%;
+    align-items: center;
+    padding: 20px 10px;
+
+
+} 
+
+.image-column {
+    flex: 1 1 45%;
+    padding: 20px 10px;
+
+}
+
+.centered-section {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.centered-section .two-columns {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.centered-section .text-column img {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #007d5c;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: 9px;
+    height: auto; /* Dynamic height based on content */
+   
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar .menu-button {
+        display: block;
+    }
+
+ .two-columns {
+    display: flex;
+    justify-content: space-between; 
+}
+
+    .dropdown-menu {
+        width: 100%;
+        right: 0;
+        border-radius: 0;
+    }
+}
+
+.container {
+  width: 60%; 
+}
+.container {
+  width: 70%; 
+  margin: 0 auto; 
+
+.center-text {
+    text-align: center;
+}
+
+
+
+
+
+
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+      margin: 0; 
+    }
+
+    .container {
+      background-color: #f0f0f0;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    #agree {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+
+
+
+ .container {
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      min-height: 10vh; /* Make the container fill the viewport height */
+    }
+
+    .button {
+      background-color: #4CAF50; /* Soft bright green */
+      color: white;
+      padding: 15px 15px;
+      border: none;
+      border-radius: 5px; 
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+    .button:hover {
+      background-color: #45a049; /* Slightly darker green on hover */
+    }
+
+
