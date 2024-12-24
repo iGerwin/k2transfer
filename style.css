@@ -83,7 +83,7 @@ img {
 .navbar .menu-button {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
     cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ img {
     width: 25px;
     height: 3px;
     background: white;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .dropdown-menu {
@@ -112,7 +112,7 @@ img {
 }
 
 .dropdown-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .dropdown-menu li:last-child {
@@ -121,7 +121,7 @@ img {
 
 .dropdown-menu li a {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Section Layouts */
@@ -371,3 +371,45 @@ footer {
 
 
 
+
+
+
+ /* Section Container */
+        .section-container {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust size as needed */
+            background: url('picture4.png') no-repeat center center / cover;
+            transition: background 0.4s ease-in-out; /* Smooth transition */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Background Change on Hover */
+        .circle-button:hover ~ .section-container {
+            background: url('picture2.png') no-repeat center center / cover;
+        }
+
+        /* Circle Button */
+        .circle-button {
+            position: relative;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background-color: #3D3D90; /* Default color */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .circle-button:hover {
+            background-color: #add8e6; /* Hover color */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
